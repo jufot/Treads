@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		229C8DED21F119370066018D /* CurrentRunVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229C8DEC21F119370066018D /* CurrentRunVC.swift */; };
 		22CB9F5F21F1101400ABBB65 /* LocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CB9F5E21F1101400ABBB65 /* LocationVC.swift */; };
 		22F710E021DFC7DD00C65442 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F710DF21DFC7DD00C65442 /* AppDelegate.swift */; };
 		22F710E221DFC7DD00C65442 /* BeginRunVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F710E121DFC7DD00C65442 /* BeginRunVC.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		229C8DEC21F119370066018D /* CurrentRunVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentRunVC.swift; sourceTree = "<group>"; };
 		22CB9F5E21F1101400ABBB65 /* LocationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationVC.swift; sourceTree = "<group>"; };
 		22F710DC21DFC7DD00C65442 /* Treads.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Treads.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22F710DF21DFC7DD00C65442 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 				22F710E121DFC7DD00C65442 /* BeginRunVC.swift */,
 				22F710E321DFC7DD00C65442 /* RunLogVC.swift */,
 				22CB9F5E21F1101400ABBB65 /* LocationVC.swift */,
+				229C8DEC21F119370066018D /* CurrentRunVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				229C8DED21F119370066018D /* CurrentRunVC.swift in Sources */,
 				22F710E421DFC7DD00C65442 /* RunLogVC.swift in Sources */,
 				22CB9F5F21F1101400ABBB65 /* LocationVC.swift in Sources */,
 				22F710E021DFC7DD00C65442 /* AppDelegate.swift in Sources */,

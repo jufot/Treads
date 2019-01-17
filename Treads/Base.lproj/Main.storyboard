@@ -89,10 +89,10 @@
             </objects>
             <point key="canvasLocation" x="749.60000000000002" y="-320.68965517241384"/>
         </scene>
-        <!--View Controller-->
+        <!--Current RunVC-->
         <scene sceneID="aVp-3O-Scu">
             <objects>
-                <viewController id="GAL-U8-4LE" sceneMemberID="viewController">
+                <viewController id="GAL-U8-4LE" customClass="CurrentRunVC" customModule="Treads" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Drv-AS-z0j">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -174,15 +174,15 @@
                                 <rect key="frame" x="254" y="552" width="75" height="75"/>
                                 <state key="normal" image="pauseButton"/>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="endRunButton" translatesAutoresizingMaskIntoConstraints="NO" id="N64-Vl-Jj5">
-                                <rect key="frame" x="54" y="561" width="56" height="56"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="END RUN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r52-er-SMf">
                                 <rect key="frame" x="151.5" y="579.5" width="76.5" height="20"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="endRunButton" translatesAutoresizingMaskIntoConstraints="NO" id="N64-Vl-Jj5">
+                                <rect key="frame" x="54" y="561" width="56" height="56"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -214,6 +214,10 @@
                         <viewLayoutGuide key="safeArea" id="gb0-5g-fYd"/>
                     </view>
                     <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="sliderImageView" destination="N64-Vl-Jj5" id="ySo-28-7hm"/>
+                        <outlet property="swipeBGImageView" destination="Zlx-x3-Q1B" id="J3M-ku-asS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fSV-Nf-Hm9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
