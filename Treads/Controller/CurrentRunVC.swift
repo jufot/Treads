@@ -7,11 +7,22 @@
 //
 
 import UIKit
+import MapKit
 
 class CurrentRunVC: LocationVC {
     
     @IBOutlet weak var swipeBGImageView: UIImageView!
     @IBOutlet weak var sliderImageView: UIImageView!
+    @IBOutlet weak var durationLbl: UILabel!
+    @IBOutlet weak var paceLbl: UILabel!
+    @IBOutlet weak var distanceLbl: UILabel!
+    @IBOutlet weak var pauseBtn: UIButton!
+    
+    var startLocation: CLLocation!
+    var lastLocation: CLLocation!
+    
+    var runDistance = 0.0
+    
     
     
     
@@ -25,6 +36,30 @@ class CurrentRunVC: LocationVC {
         swipeGesture.delegate = self as? UIGestureRecognizerDelegate
 
     }
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        manager?.delegate = self
+        manager?.distanceFilter = 10
+        startRun()
+    }
+    
+    
+    func startRun() {
+        manager?.startUpdatingLocation()
+    }
+    
+    func endRun() {
+        manager?.stopUpdatingLocation()
+    }
+    
+    
+    
+    @IBAction func pauseBtnPressed(_ sender: Any) {
+        
+    }
+    
+    
     
     //Determines the location of the circle image view on the slider image view
     @objc func endRunSwiped(sender: UIPanGestureRecognizer) {
@@ -49,5 +84,27 @@ class CurrentRunVC: LocationVC {
                 }
             }
         }
+    }
+}
+
+
+
+
+extension CurrentRunVC: CLLocationManagerDelegate {
+    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+        if status == .authorizedWhenInUse {
+            checkLocationAuthStatus()
+        }
+    }
+    
+    //Updates location if it has changed or not
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        if startLocation == nil {
+            startLocation = locations.first
+        } else if let location = locations.last {
+            runDistance += lastLocation.distance(from: location)
+            distanceLbl.text = "\(runDistance)"
+        }
+        lastLocation = locations.last
     }
 }
