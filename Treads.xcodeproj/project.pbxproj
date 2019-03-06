@@ -27,6 +27,7 @@
 		22F6588C22306429008654F1 /* Montserrat-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 22F6586F22306415008654F1 /* Montserrat-SemiBoldItalic.ttf */; };
 		22F6588D22306429008654F1 /* Montserrat-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 22F6586D22306415008654F1 /* Montserrat-Thin.ttf */; };
 		22F6588E22306429008654F1 /* Montserrat-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 22F6587422306415008654F1 /* Montserrat-ThinItalic.ttf */; };
+		22F6589022307222008654F1 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F6588F22307222008654F1 /* Extensions.swift */; };
 		22F710E021DFC7DD00C65442 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F710DF21DFC7DD00C65442 /* AppDelegate.swift */; };
 		22F710E221DFC7DD00C65442 /* BeginRunVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F710E121DFC7DD00C65442 /* BeginRunVC.swift */; };
 		22F710E421DFC7DD00C65442 /* RunLogVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F710E321DFC7DD00C65442 /* RunLogVC.swift */; };
@@ -56,6 +57,7 @@
 		22F6587A22306415008654F1 /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
 		22F6587B22306415008654F1 /* Montserrat-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-BlackItalic.ttf"; sourceTree = "<group>"; };
 		22F6587C22306415008654F1 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		22F6588F22307222008654F1 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		22F710DC21DFC7DD00C65442 /* Treads.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Treads.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22F710DF21DFC7DD00C65442 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22F710E121DFC7DD00C65442 /* BeginRunVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeginRunVC.swift; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 		22F710F421DFF87800C65442 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				22F6588F22307222008654F1 /* Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				229C8DED21F119370066018D /* CurrentRunVC.swift in Sources */,
+				22F6589022307222008654F1 /* Extensions.swift in Sources */,
 				22F710E421DFC7DD00C65442 /* RunLogVC.swift in Sources */,
 				22CB9F5F21F1101400ABBB65 /* LocationVC.swift in Sources */,
 				22F710E021DFC7DD00C65442 /* AppDelegate.swift in Sources */,
