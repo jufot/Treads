@@ -172,6 +172,11 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iAm-s1-g3K">
                                 <rect key="frame" x="254" y="552" width="75" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="79q-5o-hyL"/>
+                                    <constraint firstAttribute="width" secondItem="iAm-s1-g3K" secondAttribute="height" multiplier="1:1" id="QnV-gh-dQY"/>
+                                    <constraint firstAttribute="height" constant="75" id="std-qS-TYc"/>
+                                </constraints>
                                 <state key="normal" image="pauseButton"/>
                                 <connections>
                                     <action selector="pauseBtnPressed:" destination="GAL-U8-4LE" eventType="touchUpInside" id="P9H-g0-nRT"/>
@@ -203,8 +208,8 @@
                             <constraint firstItem="Tny-Db-wb2" firstAttribute="leading" secondItem="gb0-5g-fYd" secondAttribute="leading" id="RhS-3n-JRj"/>
                             <constraint firstItem="dSL-iq-FZM" firstAttribute="centerX" secondItem="Drv-AS-z0j" secondAttribute="centerX" id="cEo-2q-ygF"/>
                             <constraint firstItem="ffB-cn-dcH" firstAttribute="centerX" secondItem="Tny-Db-wb2" secondAttribute="centerX" id="dIS-FU-39d"/>
-                            <constraint firstItem="iAm-s1-g3K" firstAttribute="leading" secondItem="Zlx-x3-Q1B" secondAttribute="trailing" constant="-23.5" id="ffN-Gd-80N"/>
                             <constraint firstItem="iHi-KJ-UD3" firstAttribute="bottom" secondItem="gb0-5g-fYd" secondAttribute="bottom" id="ijh-Hd-ioP"/>
+                            <constraint firstItem="iAm-s1-g3K" firstAttribute="leading" secondItem="r52-er-SMf" secondAttribute="trailing" constant="26" id="k1G-YX-Tzk"/>
                             <constraint firstItem="r52-er-SMf" firstAttribute="centerX" secondItem="Zlx-x3-Q1B" secondAttribute="centerX" constant="28" id="kO1-mf-ztq"/>
                             <constraint firstItem="iAm-s1-g3K" firstAttribute="centerY" secondItem="Zlx-x3-Q1B" secondAttribute="centerY" id="mrZ-xd-iI6"/>
                             <constraint firstItem="b73-lc-7cp" firstAttribute="top" secondItem="gb0-5g-fYd" secondAttribute="top" constant="8" id="pAW-AP-dES"/>
