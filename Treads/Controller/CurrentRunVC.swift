@@ -40,25 +40,27 @@ class CurrentRunVC: LocationVC {
 
     }
     
-    
+    //Starts run when view apears
     override func viewWillAppear(_ animated: Bool) {
         manager?.delegate = self
         manager?.distanceFilter = 10
         startRun()
     }
     
-    
+    //Starts run
     func startRun() {
         manager?.startUpdatingLocation()
         startTimer()
         pauseBtn.setImage(UIImage(named: "pauseButton"), for: .normal) //changes image pause
     }
     
+    //Ends run and updates Realm
     func endRun() {
         manager?.stopUpdatingLocation()
-        //Add our object to Realm
+        //Adds object to Realm
     }
     
+    //Pauses run
     func pauseRun() {
         startLocation = nil
         lastLocation = nil
@@ -67,6 +69,7 @@ class CurrentRunVC: LocationVC {
         pauseBtn.setImage(UIImage(named: "resumeButton"), for: .normal) //changes the image to resume button
     }
     
+    //Start timer
     func startTimer() {
         durationLbl.text = counter.formatTimeDurationToString()
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateCounter), userInfo: nil, repeats: true)
